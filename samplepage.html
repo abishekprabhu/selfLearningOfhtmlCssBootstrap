@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <script src="https://kit.fontawesome.com/3eddb04fa2.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,500;1,900&display=swap" rel="stylesheet">
+<!--Important link from source https://bootsnipp.com/snippets/rlXdE-->
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <nav id="navbar">
+        <div id="nav-l">
+         
+            <img  id="logo" src="images/food jet.png" alt="">
+            <h3 id="other ">other</h3>
+            <p id="address" > <i class="fa-solid fa-location-dot"></i>    Nagpur,Maharastra,India</p>
+           
+        </div>
+         
+    
+        <div id="nav-r">
+                 <input id="search-box" type="text" placeholder="search food of your choice">
+                <a  class="link" href=""><i class="fa-solid fa-magnifying-glass"></i>  Search</a>
+            
+                <a class="link"><i class="fa-regular fa-face-smile"></i>  Offers</a>
+           
+                <a class="link"><i class="fa-sharp fa-solid fa-circle-info"></i> Help</a>
+            
+                <a href="./login.html"><button class="link btn">Login</button></a>
+                <a href="./signup.html"><button class="link btn">SingUp</button></a>
+     
+        </div>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-image">
+        <img src="https://img.freepik.com/free-photo/top-view-food-frame-with-copy-space_23-2148723447.jpg?w=740&t=st=1687114704~exp=1687115304~hmac=7452c5375557dc8fd638fffd9126726956ab1fffdb8df18cc4933eb846b1cec5" alt="Image">
+      </div>
+      <div class="hero-content">
+        <h1 class="hero-heading">FoodJet - Solution For All Hunger</h1>
+        <p class="hero-text">
+          This is an Online Food Delivery Application that aims to create a bridge between restaurants and customers.
+          The main objective of this application is to provide a platform where restaurant owners can create and list their food items along with their prices. Customers can sign up, view nearby restaurants, and place orders. Customers can select a payment method and make payments for their orders. Restaurant owners can accept orders and deliver them to customers.</p>
+      </div>
+    </section>
+
+
+<div class="card">
+  <h1 class="card-heading">For Customers</h1>
+  <div>
+    <button class="card-button"  > <a href="/registercustomer.html">Register Customer</a></button>
+    <button class="card-button"> <a href="/updatecustomer.html">Update  Customer</a></button>
+    <button class="card-button"> <a href="/deletebyemail.html">Delete Customer</a></button>
+    <button class="card-button"> <a href="/viewcustomerbyemail.html">View Customer Details</a></button>
+    <button class="card-button"><a href="/viewAllCustomers.html">All Customer Details</a></button>
+  </div>
+ </div>
+
+ <div class="card">
+  <h1 class="card-heading">For Categories</h1>
+  <div>
+    <button class="card-button"><a href="/addcategory.html">Add Category</a></button>
+    <button class="card-button"><a href="./updatecategory.html">Update Category</a></button>
+    <button class="card-button"><a href="/deletecategory.html">Delete Category</a> </button>
+    <button class="card-button"><a href="/viewcategory.html">View Category</a></button>
+    <button class="card-button"><a href="/viewAllCategory">Get all Categories</a></button>
+  </div>
+ </div>
+
+ <div class="card">
+  <h1 class="card-heading">For Restaurants</h1>
+  <div>
+    <button class="card-button">Add Restaurant</button>
+    <button class="card-button">Update  Restaurant</button>
+    <button class="card-button">Delete Restaurant</button>
+    <button class="card-button">View Restaurant By Name</button>
+    <button class="card-button">View Restaurant By Location</button>
+  </div>
+ </div>
+
+<div class="card">
+  <h1 class="card-heading">For Food Items</h1>
+  <div>
+    <button class="card-button">Add Food Items</button>
+    <button class="card-button">Update  Food Item's Category</button>
+    <button class="card-button">Delete Food Items</button>
+    <button class="card-button">View Item's Category</button>
+    <button class="card-button">View All Items By category</button>
+    <button class="card-button">View Items By Restaurent</button>
+  </div>
+ </div>
+
+
+ <div class="card">
+  <h1 class="card-heading">For Food Cart</h1>
+  <div>
+    <button class="card-button">Add Item To Cart</button>
+    <button class="card-button">Increase Item Quantity</button>
+    <button class="card-button">Reduce Item Quantity</button>
+    <button class="card-button">Remove Item</button>
+    <button class="card-button">Clear Cart</button>
+  </div>
+ </div>
+
+ <div class="card">
+  <h1 class="card-heading">For Order</h1>
+  <div>
+    <button class="card-button">Add Order</button>
+    <button class="card-button">Update Order</button>
+    <button class="card-button">Delete Order</button>
+    <button class="card-button">Remove Item</button>
+    <button class="card-button">View Order</button>
+    <button class="card-button">View All Order By Customer</button>
+  </div>
+ </div>
+
+ <div class="card">
+  <h1 class="card-heading">For Billing</h1>
+  <div>
+    <button class="card-button">Add Bill</button>
+    <button class="card-button">Update Bill</button>
+    <button class="card-button">Remove Bill</button>
+    <button class="card-button">View Bill</button>
+    <button class="card-button">View Bill By Date Range</button>
+    <button class="card-button">View Bill By Customer</button>
+  </div>
+ </div>
+
+
+    <footer>
+        <section id="footer">
+            <div class="container">
+              <div class="row text-center text-xs-center text-sm-left text-md-left">
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                  <h5>COMPANY</h5>
+                  <ul class="list-unstyled quick-links">
+                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About us</a></li>
+                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Team</a></li>
+                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Careers</a></li>
+                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FoodJet Blog</a></li>
+                  </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                  <h5>CONTACT</h5>
+                  <ul class="list-unstyled quick-links">
+                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Help & Support</a></li>
+                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Partner with us</a></li>
+                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Ride with us</a></li>
+                  </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                  <h5>LEGAL</h5>
+                  <ul class="list-unstyled quick-links">
+                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Terms & Conditions</a></li>
+                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Refund & Cancellation</a></li>
+                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Privacy Policy</a></li>
+                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Cookie Policy</a></li>
+                    <li><a href="https://wwwe.sunlimetech.com" title="Design and developed by"><i class="fa fa-angle-double-right"></i>Phishing & Fraud</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+                  <ul class="list-unstyled list-inline social text-center">
+                    <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook"></i></a></li>
+                    <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>
+                    <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram"></i></a></li>
+                    <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-google-plus"></i></a></li>
+                    <li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fa fa-envelope"></i></a></li>
+                  </ul>
+                </div>
+                </hr>
+              </div>  
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+                  <p><u><a href="https://www.nationaltransaction.com/">FoodJet  Corporation</a></u> is a Registered MSP/ISO of INDIA</p>
+                  <p class="h6">&copy All right Reversed.<a class="text-green ml-2" href="https://www.sunlimetech.com" target="_blank">FOODJET</a></p>
+                </div>
+                </hr>
+              </div>  
+            </div>
+          </section>
+    </footer>
+</body>
+</html>
+<script src="./scripts/index.js"></script>

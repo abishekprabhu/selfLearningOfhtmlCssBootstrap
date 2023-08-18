@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Poppins:wght@300;400;500;700&family=Roboto+Condensed:wght@300&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            
+        }
+        #main{
+            font-family: 'Inspiration', cursive;
+            font-size: 30px;
+            /* font-weight: 400; */
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html" id="main" target="bottom">
+                <img src="./img/download.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top p-10" style="margin-left: 20px;">
+                Main Page
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse p-2" style="margin-left: 52px;" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html" target="bottom"> <i class='fas fa-home' style='color:red'></i> Home</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="student_corner.html" target="bottom">Student Corner</a>
+                    </li> -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="studentDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Student Corner
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="studentDropdown">
+                            <li><a class="dropdown-item" href="login.html" target="bottom">Login</a></li>
+                            <li><a class="dropdown-item" href="register.html" target="bottom">Registration</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html" target="bottom"><i class='fas fa-shopping-cart' style='color:red'></i>Cart</a>
+                        
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html" target="bottom"><i class='fas fa-info-circle' style='color:red'></i>About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html" target="bottom"><i class='fas fa-address-book ' style='color:red'></i> Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+#access {
+    background: #0f84e8; /* Show a solid color for older browsers */
+    display: block;
+    position: fixed;
+    margin: 0 auto 6px 55px;
+    position: absolute;
+    top: 100px;
+    z-index: 9999;
+    
+    
+}
+#access ul {
+    font-size: 13px;
+    list-style: none;
+    margin: 0 0 0 -0.8125em;
+    padding-left: 0;
+}
+#access li {
+    position: relative;
+    padding-left: 30px;
+}
+#access a {
+    border-bottom: 2px solid #fff;
+    color: #eee;
+    display: block;
+    line-height: 3.333em;
+    padding: 0 10px 0 20px;
+    text-decoration: none;
+}
+    </style> -->
+    <!-- <style>
+        table{
+            width: 100%;
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <nav id="access">
+    <div >
+        <ul style="list-style-type: none; display: flex; padding-right: 2%; " > -->
+    <!-- <table>
+        <tr>
+            <td><a href="home.html" target="bottom">Home</a></td>
+            <td><a href="student_corner.html" target="bottom">Student Corner</a></td>
+            <td><td>
+                <select id="select_student">
+                    <option value="" disabled selected>Student Corner</option>
+                    <option value="login.html">Login</option>
+                    <option value="register.html">Register</option>
+                </select>
+            </td></td>
+             <td><a href="register.html" target="bottom">Register</a></td> -->
+            <!-- <td><a href="cart.html" target="bottom">Cart</a></li>
+            <td><a href="about.html"target="bottom">About</a></td>
+            <td><a href="contact.html"target="bottom">ContantUs</a></td>
+        </tr>
+    </table>
+    </div>
+</nav>
+<script>
+        document.getElementById('select_student').addEventListener('change', function() {
+            var selectedOption = this.value;
+            if (selectedOption) {
+                document.getElementsByName('bottom')[0].src = selectedOption;
+            }
+        });
+    </script>
+</body>
+</html>  --> 

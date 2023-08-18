@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Login Form</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <style>
+   
+
+   .login-container {
+      max-width: 450px;
+      margin: 0 auto;
+      margin-top: 100px;
+      padding: 20px;
+      background-color: #ffffff;
+      box-shadow: 0px 0px  40px 10px rgba(0,0,0, 0.6);          
+      /* transition: transform 0.9s ease-out; */
+      border-radius: 16px;
+    }
+
+    /* .login-container:hover {
+      transform: scale(1.05); 
+    } */
+    .login-container h2 {
+      margin:30px;
+      background: linear-gradient(to right, #56d8e4, #9f01ea);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+    }
+
+    .login-container .form-floating , .form-check{      
+      margin: 20px;
+    }
+    
+  
+    .login-container .btn-primary {
+      width: 100%;
+      
+    }
+
+    .login-container .forgot-password , .register-link{
+      text-align: center;
+      margin-top: 10px;
+    }
+    
+    .show-password-icon {
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <section id="team" class="py-4" style="background-image: url('https://img.freepik.com/free-vector/wavy-shape-business-background-paper-cut-style_1017-33399.jpg?w=1380&t=st=1688207002~exp=1688207602~hmac=2790ed29fd019f49088094c349dd5f1d71db14130022fb570bdfa62d151eaac9');
+  background-repeat: no-repeat; background-attachment: fixed; background-size: cover; width:100%;">
+
+    <div class="container">
+      <div class="login-container bg-dark text-light">        
+        <h2 class="text-center">Login Form</h2>
+        <form>
+          <div class="form-floating text-muted">
+            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+            <label for="email">Email</label>
+          </div>
+          <div class="form-floating text-muted position-relative">
+            <input type="password" class="form-control" id="password" placeholder="Password">
+            <label for="password">Password</label>
+             <i class="fas fa-eye-slash show-password-icon" id="showPasswordIcon"></i>
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="remember">
+            <label class="form-check-label" for="remember">Remember me</label>
+          </div>
+          <div style="margin: 20px;">
+            <button type="submit" class="btn btn-lg btn-primary">Login</button>
+          </div>
+          <div class="forgot-password">
+            <a href="#">Forgot password?</a>
+          </div>
+          <div class="register-link">
+            <p>Don't have an account? <a href="#">Register</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const passwordInput = document.getElementById('password');
+    const showPasswordIcon = document.getElementById('showPasswordIcon');
+
+    showPasswordIcon.addEventListener('click', () => {
+      if (passwordInput.type === 'password') {
+        passwordInput.type = 'text';
+        showPasswordIcon.classList.remove('fa-eye-slash');
+        showPasswordIcon.classList.add('fa-eye');
+      } else {
+        passwordInput.type = 'password';
+        showPasswordIcon.classList.remove('fa-eye');
+        showPasswordIcon.classList.add('fa-eye-slash');
+      }
+    });
+
+    
+  </script>
+</body>
+</html>
